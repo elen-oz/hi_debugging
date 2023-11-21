@@ -3,34 +3,42 @@
 **Line 3**
 **_Syntax error_**: single quote instead of double quote:
 Found error visually in code editor: the error is highlighted in red.
+
 `"search’` => `"search”`
 
 **Lines 3 - 6**
-**_Syntax error_**: missing # to select ID tag
+**_Syntax error_**: missing # to select ID tag.
+
 Found error in browser Dev Tools:
 
 > “Uncaught TypeError: Cannot read properties of null (reading 'addEventListener’)”
 
 **Line 4**
 **_Syntax error_**: missed letter:
+
 `querySelectr` => `querySelector`
+
 Found error in Dev Tools browser:
 
 > “script.js:4 Uncaught TypeError: document.querySelectr is not a function”
 
 **Line 40**
 **_Syntax error_**: missed parenthesis after ‘function’, around ‘e’
+
 Found error in Dev Tools browser:
 
 > “Uncaught SyntaxError: Unexpected token '{' (at script.js:40:46)”
 
 **Line 41**
 **_Runtime error_**: missed ‘e’ before ‘preventDefault’ method:
+
 `preventDefault();` => `e.preventDefault();`
+
 Found error: unexpected behavior: page refreshed by clicking on button & throw reading documentation about preventDefault method.
 
 **Lines 28 - 37**
 **_Logical error_**: conditions do not correspond to the task.
+
 From:
 
 ```
@@ -63,14 +71,19 @@ messageEl.textContent = 'Sweater weather!';
 
 **Line 19**
 **_Syntax error_**: Using variable inside string should be with backticks `` not single quotes ‘’:
+
 \'\${temp}°C' => &#96;${temp}°C&#96;
 
 **Line 17**
-**_Runtime error_**: there is no data in `data.temp`, missing key “main”
+**_Runtime error_**: there is no data in `data.temp`, missing key “main”.
+
 Error found by console.log() - checking what data structure inside variable data.
+
 `let temp = data.temp - 273.15;` => `let temp = data.main.temp - 273.15;`
 
 **Line 17**
 **_Runtime error_**: temperature should be rounded to integer.
+
 Error found visually by running project in browser.
+
 `let temp = data.main.temp - 273.15;` => `let temp = Math.round(data.main.temp - 273.15);`
