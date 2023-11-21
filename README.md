@@ -1,4 +1,6 @@
-# hi_debugging
+## hi_debugging
+
+# A list of bugs identified:
 
 **Line 3** -
 **_Syntax error_**: single quote instead of double quote:
