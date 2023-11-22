@@ -11,7 +11,7 @@
 - **Lines 3-6** --
   **_Syntax error_**: missing # to select ID tag.
 
-  Found error in browser Dev Tools:
+  Found error in browser inspection tool :
 
   > “Uncaught TypeError: Cannot read properties of null (reading 'addEventListener’)”
 
